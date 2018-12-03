@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecentContact.Activity.RecentContactActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#303030">
+
+        <TextView
+            android:id="@+id/team_show_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:text="云信"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="5"/>
+
+        <ImageView
+            android:id="@+id/barSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/barAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recentcontact_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eaeaea"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/yunxin_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/recents1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/total_unread_count_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:background="@drawable/badger"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:text="云信"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/yunxin_btn"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/contact_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/contact0"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/total_friend_apply_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:background="@drawable/badger"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:text="通讯录"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/contact_btn" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/friendcir_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/find0"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/total_friend_circle_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:background="@drawable/badger"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:text="朋友圈"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/friendcir_btn" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/my_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/person0"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/total_person_notification_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:background="@drawable/badger"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:text="我"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/my_btn" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

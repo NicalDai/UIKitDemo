@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundview="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/recent_contact_item"
+    android:layout_height="60dp"
+    >
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+            <com.netease.nical.nimuikitdemo.CustomView.RoundImageView
+                android:id="@+id/session_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_logo" />
+
+            <TextView
+                android:id="@+id/unread_number_text"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:background="@drawable/badger"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/session_name"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="Default"
+                android:textSize="17dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/last_message"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="Default"
+                android:textSize="13dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="80dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/time_text"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Default"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/mute_alter"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:layout_gravity="end"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
